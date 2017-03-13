@@ -215,7 +215,7 @@ function loadGraph(idease) {
         typing.id_text = 1;
       }
       if(e.keyCode != 13 && e.keyCode != 8) {
-        ideas[typing.id].text += String.toLowerCase(String.fromCharCode(e.keyCode));
+        ideas[typing.id].text += String.fromCharCode(e.keyCode);
       } else if(e.keyCode == 8) {
         ideas[typing.id].text = ideas[typing.id].text.slice(0, ideas[typing.id].text.length-1);
       } else {
